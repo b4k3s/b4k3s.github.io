@@ -20,7 +20,7 @@
 
             searchInput.focus();
 
-            window.addEventListener('pageshow', function(event) {
+            window.addEventListener('beforeunload', function(event) {
                 if (search) {
                     search.value = '';
                 }
