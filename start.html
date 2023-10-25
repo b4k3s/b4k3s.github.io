@@ -13,5 +13,21 @@
             <input type="hidden" name="ia" value="web">
         </form>
     </div>
+
+    <script>
+            const searchInput = document.getElementById('search');
+
+            searchInput.focus();
+        
+            document.addEventListener('click', function() {
+                searchInput.focus();
+            });
+                
+            window.addEventListener('beforeunload', function(event) {
+                if (search) {
+                    search.value = '';
+                }
+            });
+    </script>
 </body>
 </html>
