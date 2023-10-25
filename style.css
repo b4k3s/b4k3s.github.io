@@ -1,28 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>start</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <form action="https://duckduckgo.com/">
-            <input type="text" name="q" id="search" required>
-        </form>
-    </div>
+body {
+    background-color: #282828;
+    font-family: "FiraCode Nerd Font Mono", monospace;
+    font-size: 14pt;
+    color: #ebdbb2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
-<link href='styles.css?version=1' rel='stylesheet'></link>
+input {
+    font-family: "FiraCode Nerd Font Mono", monospace;
+    font-size: 14pt;
+    text-align: center;
+    width: 100vw;
+    border: none;
+    outline: none;
+}
 
-    <script>
-            const searchInput = document.getElementById('search');
+.container {
+    text-align: center;
+    overflow: hidden;
+}
 
-            searchInput.focus();
+.search-box {
+    padding: 10px;
+    background-color: #3c3836;
+    font-family: "FiraCode Nerd Font Mono", monospace;
+    border: none;
+    color: #ebdbb2;
+    border-radius: 5px;
+    width: 200px;
+    outline: none;
+}
 
-            document.addEventListener('click', function() {
-                searchInput.focus();
-            });
-    </script>
-</body>
-</html>
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 14pt;
+    background-color: #282828;
+    border: none;
+    color: #ebdbb2;
+    border-radius: 5px;
+}
