@@ -8,31 +8,10 @@
 </head>
 <body>
     <div class="container">
-        <form id="search-form" onsubmit="performSearch(); return false;">
-            <input type="text" id="search" required>
+        <form action="https://duckduckgo.com/" method="get">
+            <input type="text" id="search" autofocus>
+            <input type="hidden" name="ia" value="web">
         </form>
     </div>
-
-    <script>
-            const searchInput = document.getElementById('search');
-
-            function performSearch() {
-                const searchTerm = document.getElementById("search").value;
-                const searchURL = "https://duckduckgo.com/?q=" + encodeURIComponent(searchTerm) + "&ia=web";
-                window.location.href = searchURL;
-            }
-        
-            searchInput.focus();
-
-            window.addEventListener('beforeunload', function(event) {
-                if (search) {
-                    search.value = '';
-                }
-            });
-        
-            document.addEventListener('click', function() {
-                searchInput.focus();
-            });
-    </script>
 </body>
 </html>
