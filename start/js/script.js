@@ -14,6 +14,6 @@ document.addEventListener('keydown', (event) => {
 
         window.location.href = isValidURL(query)
             ? (/^https?:\/\//.test(query) ? query : `http://${query}`)
-            : `https://duckduckgo.com/?q=${encodeURIComponent(query)}`;
+            : `https://duckduckgo.com/?q=${query}`;
     }
 });
