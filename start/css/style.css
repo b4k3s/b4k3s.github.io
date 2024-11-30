@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    font-family: monospace;
+    font-size: 14pt;
+    color: #ebdbb2;
+    background-color: #282828;
+}
+
+input {
+    text-align: center;
+    width: 100vw;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 14pt;
+    color: #ebdbb2;
+    background-color: #282828;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
